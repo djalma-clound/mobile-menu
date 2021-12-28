@@ -1,0 +1,366 @@
+body{
+  background: ;
+  
+}
+body, ul{
+  margin: 0px;
+  padding: 0px;
+}
+#logo{ 
+  border-radius: 35px;
+  
+}
+#PT{  
+  border: 1px solid transparent;
+  border-radius: 4px;
+ }
+ #En{ 
+   border: 1px solid transparent;
+   border-radius: 4px;
+   
+ }
+ a{
+  color: black; 
+  text-decoration: none;
+   font-family: Sans-Serif;
+   font-size:1.2rem;
+ }
+ a:hover{ 
+   background: lightblue;
+ }
+ img{ 
+   width: 60px;
+   height: ;
+ }
+ #header{ 
+   position:fixed;
+   background-color:lightgray;
+   box-sizing: border-box;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 70px;
+   padding: 1rem;
+   transition-duration:1000s;
+   z-index: 1000;
+ }
+ #menu{
+   list-style: none;
+   display: flex;
+   gap: 1.5rem;
+   
+ }
+ #menu a{
+     display: block;
+     padding: .1rem;
+     color:black ;
+     
+   }
+   #btn-mobile{
+     display: none;
+     
+   }
+                .pic{  
+               width: 80%;
+               height: 70vh;
+               margin-top: 130px;
+               margin-left: 10%;
+             }
+             h3{ 
+             text-align: center;
+             }
+             .under-h3{ 
+               text-align: center;
+               text-align: left;
+               
+             }
+       #text{ 
+       max-width: 100%;
+       max-height: 100vh;
+       border: 1px solid transparent;
+      line-height: 25px!important;
+      text-indent: 10px; 
+        }
+        .name{ 
+          margin-top: -80px;
+          
+        }
+        .usa{ 
+          display: none;
+          width:25px;
+          border:1px solid transparent;
+          
+        }
+        
+       .bra{ 
+          width:25px;
+          border:1px solid transparent;
+          display:;
+        }
+        
+        
+         /*   contact-form section     */
+        
+       
+        .contact-form {  
+   width:80%;
+   background-color:lightgray;
+   box-shadow:transparent;
+   margin-top:215px;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   position:relative;
+   border: 1px solid red;
+  
+   
+ }
+
+ .input-name{  
+   width:92%;
+   height: 40px;
+   top: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border: 1px solid #777 ;
+  
+   outline: none;
+   
+ }
+.input-email{  
+   width:92%;
+   height: 40px;
+   margin-top: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border: 1px solid #777 ;
+  
+   outline: none;
+   
+ }
+ .text{ 
+   width:94%;
+   height: 40px;
+   
+   margin-top:20px;
+   
+ }
+ .textarea{  
+   width: 94%;
+   position: relative;
+   height:20vh;
+   margin-top: 20px;
+   }
+ .btn{ 
+   border-radius: 15px;
+   color: #fff;
+   margin-top: 10px;
+   padding: 10px;
+   background-color: #47c35a;
+   font-size: 12px;
+   border: none;
+   cursor: pointer;
+   margin-left:30%;
+   
+ }
+ .h4{  
+   text-align: center;
+   
+ }
+          
+   /* contact-form end here     */  
+   
+  
+ 
+   @media (max-width:600px) {
+          #header{ 
+            background-color:lightgray;
+            position: fixed;
+            width: 100%;
+          }
+     #btn-mobile{ 
+       display: block;
+     }
+
+ #menu{
+       position: absolute;
+       width:100%;
+       height: 0px;
+       top: 70px;
+       left:1px ;
+       background:gray;
+       display:block;
+       z-index: 10000;
+       transition: .6s;
+       visibility: hidden;
+       overflow-y: hidden;
+       }
+       #nav.active #menu{ 
+        height: 81vh;
+        visibility: visible;
+        overflow-y: auto;
+        z-index: 1000;
+   
+         }
+         #menu a{
+           padding: 1rem 0;
+           margin: 0 1rem;
+           border-bottom: 2px solid rgba(0, 0, 0, .05);
+          
+          }
+
+          #btn-mobile{ 
+            display: flex;
+            padding:.5rem 1rem;
+            font-size: 1rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+            gap: .5rem;
+          }
+          #hamburger{
+           border-top: 2px solid;
+            width: 20px;
+           }
+          #hamburger::after, #hamburger::before{
+             content: '';
+             display: block;
+             width: 20px;
+             height: 2px;
+             background:currentColor;
+             margin-top: 5px;
+             transition: .3s;
+             position: relative;
+             
+           }
+           #nav.active #hamburger{ 
+             border-top-color: transparent;
+             
+           }
+             #nav.active #hamburger::before{ 
+               transform: rotate(135deg);
+               
+             }
+             #nav.active #hamburger::after{ transform: rotate(-135deg);
+               top: -7px;
+             }
+             ./grid{ 
+               position: absolute;
+               margin-top: 80px;
+               border: 1px solid;
+               height:auto;
+               display:flex;
+               margin-left: 20%;
+               
+             }
+             h2{
+               position: relative;
+              top:100px; 
+              color:;
+               
+             }
+          .pic{  
+               width: 90%;
+               height: 20vh;
+               margin-top:130px;
+               margin-left: 7%;
+             }
+             #text{ 
+               padding: 3px;
+              max-width: 100%;
+              max-height:100vh;
+              border: 1px solid transparent;
+              line-height: 25px!important;
+              text-indent: 10px;
+              }
+           .under-h3{ 
+              text-align:left;
+            }
+
+        .usa{ 
+          width:25px;
+          border:1px solid transparent;
+          
+        }
+        
+       .bra{ 
+          width:25px;
+          border:1px solid transparent;
+          
+        }
+             /.name{ 
+               position: relative;
+              / top: 40px;
+             }
+          /*   contact-form section     */
+       
+     .contact-form {  
+   width: 330px;
+   background-color:lightgray;
+   box-shadow:transparent;
+   margin-top:200px;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   position: relative;
+   border: 1px solid transparent;
+   
+ }
+
+ .input-name{  
+   width:92%;
+   height: 40px;
+   top: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border: 1px solid #777 ;
+  outline: none;
+ }
+ 
+.input-email{  
+   width:92%;
+   height: 40px;
+   margin-top: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border: 1px solid #777 ;
+   outline: none;
+  }
+  
+ .text{ 
+   width:97%;
+   height: 40px;
+   background: white;
+   margin-top:20px;
+   
+ }
+ .textarea{  
+   width: 97%;
+   position: relative;
+   height:20vh;
+   margin-top: 20px;
+   background: white;
+   }
+ .btn{ 
+   border-radius: 15px;
+   color: #fff;
+   margin-top: 10px;
+   padding: 10px;
+   background-color: #47c35a;
+   font-size: 12px;
+   border: none;
+   cursor: pointer;
+   margin-left:30%;
+   
+ }
+ h4{  
+  margin-top:80px;
+   padding: 10px;
+   position:relative;
+   z-index: -1000;
+   
+ }
+          
+   /* contact-form end here     */  
+   
+   
+ }
